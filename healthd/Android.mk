@@ -150,9 +150,7 @@ endif
 
 LOCAL_HAL_STATIC_LIBRARIES := libhealthd
 
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 BOARD_HAL_STATIC_LIBRARIES ?= libhealthd.qcom
-endif
 
 # Symlink /charger to /sbin/charger
 LOCAL_POST_INSTALL_CMD := $(hide) mkdir -p $(TARGET_ROOT_OUT) \
